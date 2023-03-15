@@ -5,15 +5,18 @@ y devuelve como resultado una cadena de texto que indica si el número es par o 
 Mostrar por pantalla el resultado devuelto por la función.
 */
 
-const num;
+const num = prompt("Ingrese un número mayor a 0");
+
+let resultado = parImpar(num);
+document.write("El número ingresado es "+resultado);
+document.write("<br>");
+document.write("El resultado de dividir el número ingresado en 2 es: "+(num/2));
 
 function parImpar(num){
     if(num%2===0){
-        document.write("El número ingresado es par");
-        document.write("El resultado de dividir el número ingresado en 2 es: "+(num/2));
+        return "par";
     }
     else{
-        document.write("El número ingresado es impar");
-        document.write("El resultado de dividir el número ingresado en 2 es: "+(num/2));
+        return "impar";
     }
 }
