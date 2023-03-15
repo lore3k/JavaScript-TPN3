@@ -10,9 +10,8 @@ La fórmula del perímetro  es p = 2*(a +b)
 const ladoA = prompt("Ingrese el valor del lado A del rectángulo:");
 const ladoB = prompt("Ingrese el valor del lado B del rectángulo:");
 
-let resultado = perimetro(ladoA,ladoB);
-document.write("El perímetro del rectángulo es "+resultado);
+perimetro(ladoA,ladoB);
 
 function perimetro(ladoA,ladoB){
-    return resultado=(2*(ladoA + ladoB));
+    document.write("El perímetro del rectángulo es: "+(2*ladoA+2*ladoB));
 }
