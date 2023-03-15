@@ -13,10 +13,16 @@ document.write("<br>");
 document.write("El resultado de dividir el número ingresado en 2 es: "+(num/2));
 
 function parImpar(num){
-    if(num%2===0){
-        return "par";
+    if(num!=0){
+        if(num%2===0){
+            return "par";
+        }
+        else{
+            return "impar";
+        }
     }
     else{
-        return "impar";
+        alert("El número a ingresar debe ser mayor que 0.")
     }
+    
 }
